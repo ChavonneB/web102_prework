@@ -21,6 +21,12 @@ body {
 
 .stats-container {
     display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .stats-card {
@@ -30,6 +36,12 @@ body {
     margin: 1%;
     width: 100%;
     text-align: center;
+    transition: all 0.5s ease;
+}
+
+.stats-card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 #num-contributions, #total-raised, #num-games {
@@ -73,3 +85,7 @@ button {
     margin: 1%;
     border-radius: 7px;
 }
+
+/* #first-game p, #second-game p {
+    margin-bottom: 20px !important; /* Adds space between header and game 
+} */
